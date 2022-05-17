@@ -2,11 +2,8 @@
 
 ---
 
-
 Email: [ahsanm5@vcu.edu](mailto:ahsanm5@vcu.edu)
-
-Github: mahsan321
-
+Github: [mahsan321](https://github.com/mahsan321)
 Phone Number: +1 804-591-6460
 
 ## Research Interest
@@ -15,14 +12,14 @@ Phone Number: +1 804-591-6460
 * Cyber-Physical System
 * Industrial IoT
 
-## EXPERIENCE
+## Experience
 ----------
 
 ### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
 Position: Team Lead
 Oct 2014 - July 2021
 
-### OneM2M Framework:
+#### [OneM2M Framework](https://github.com/AikM2M):
 * Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards
 * MQTT client/broker model implementation on Raspbian Jessie OS running over Raspberry Pi 3 Gateway design for IoT Applications which supports multiple service functionalities including
     - Registration
@@ -35,9 +32,7 @@ Oct 2014 - July 2021
 * Serialization/de-serialization of JSON request/response packets 
 * DTLS Support for MQTT-SN Multi-threaded Gateway Application
 
-[GitHub Link:](https://github.com/AikM2M) [https://github.com/AikM2M](https://github.com/AikM2M)
-
-### Projects Undertaken:
+#### Projects Undertaken:
 * Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols
 * Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. 
 * Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules
@@ -83,22 +78,3 @@ Oct 2014 - July 2021
 ---
 [Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
-### Category Name 2
-
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
-
----
-
-
-
-
----
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
