@@ -2,9 +2,9 @@
 
 ---
 Email: [ahsanm5@vcu.edu](mailto:ahsanm5@vcu.edu)
-
+<br>
 Github: [mahsan321](https://github.com/mahsan321)
-
+<br>
 Phone Number: +1 (804) 591-6460
 
 ## Research Interest
@@ -18,7 +18,7 @@ Phone Number: +1 (804) 591-6460
 
 ### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
 Position: Team Lead
-
+<br>
 Oct 2014 - July 2021
 #### [OneM2M Framework](https://github.com/AikM2M):
 * Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards
@@ -32,6 +32,7 @@ Oct 2014 - July 2021
 * Transport Layer Protocol DTLS/UDP and TLS/TCP implementation. 
 * Serialization/de-serialization of JSON request/response packets 
 * DTLS Support for MQTT-SN Multi-threaded Gateway Application
+<br>
 #### Projects Undertaken:
 * Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols
 * Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. 
