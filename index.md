@@ -10,8 +10,7 @@ Github: [mahsan321](https://github.com/mahsan321)
 Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=en&oi=sra)
 
 
-## RESEARCH INTEREST
---------------  
+## RESEARCH INTEREST  
 * Cyber-Physical System 
 * Security
 * Additive Manufacturing
@@ -19,7 +18,6 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 * Internet of Things
 
 ## PUBLICATIONS
-------------
 * Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "SecGW: On Providing DTLS based Multi-threading in MQTT-SN Gateway Application", (In-Progress)
 * Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022
 * Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "OneM2M Architecture Based Secure MQTT Binding in Mbed OS", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.
@@ -27,7 +25,6 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 * Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.
 
 ## EXPERIENCE
-----------
 ### Security and Forensics Engineering (SAFE) LAB Position, VCU, Richomond
 Graduate Assistant
 <br>
@@ -61,7 +58,6 @@ Oct 2014 - July 2021
 * Development of Energy Efficiency Advisory course in collaboration with sequa gGmbH – GiZ
 
 ## SKILLS
-------
 * STM32 Nucleo-64 boards 
 * Embedded C 
 * MBed OS (Open-Source Embedded Operating System)   
@@ -72,6 +68,5 @@ Oct 2014 - July 2021
 * ESP8266 Module
 
 ## ACADEMIC ACTIVITIES
----------------------------
 * ICOSST’16, ICOSST’17, ICOSST’18 and ICOSST’19 Event Organizer.
 * ICECE’17 and ICECE’18 Event Organizer.
