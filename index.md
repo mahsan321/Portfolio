@@ -13,9 +13,16 @@ Phone Number: +1 (804) 591-6460
 * Cyber-Physical System
 * Industrial IoT
 
+## PUBLICATIONS
+------------
+* Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "SecGW: On Providing DTLS based Multi-threading in MQTT-SN Gateway Application", (In-Progress)
+* Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022
+* Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "OneM2M Architecture Based Secure MQTT Binding in Mbed OS", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.
+* Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices", IEEE Globecom 2019.
+* Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.
+
 ## EXPERIENCE
 ----------
-
 ### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
 Position: Team Lead
 <br>
@@ -54,14 +61,6 @@ Oct 2014 - July 2021
 * Python
 * Arduino Boards
 * ESP8266 Module
-
-## PUBLICATIONS
-------------
-* Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "SecGW: On Providing DTLS based Multi-threading in MQTT-SN Gateway Application", (In-Progress)
-* Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022
-* Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "OneM2M Architecture Based Secure MQTT Binding in Mbed OS", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.
-* Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices", IEEE Globecom 2019.
-* Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.
 
 ## ACADEMIC ACTIVITIES
 ---------------------------
