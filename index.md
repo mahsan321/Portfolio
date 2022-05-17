@@ -1,4 +1,4 @@
-### Portfolio
+# Portfolio
 
 ---
 
@@ -18,11 +18,11 @@ Phone Number: +1 804-591-6460
 ## EXPERIENCE
 ----------
 
-# Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
+### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
 Position: Team Lead
 Oct 2014 - July 2021
 
-# OneM2M Framework:
+### OneM2M Framework:
 * Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards
 * MQTT client/broker model implementation on Raspbian Jessie OS running over Raspberry Pi 3 Gateway design for IoT Applications which supports multiple service functionalities including
     - Registration
@@ -37,7 +37,7 @@ Oct 2014 - July 2021
 
 [GitHub Link:](https://github.com/AikM2M) [https://github.com/AikM2M](https://github.com/AikM2M)
 
-# Projects Undertaken:
+### Projects Undertaken:
 * Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols
 * Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. 
 * Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules
