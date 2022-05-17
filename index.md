@@ -35,28 +35,28 @@ Position: Team Lead
 <br>
 Oct 2014 - July 2021
 #### [OneM2M Framework](https://github.com/AikM2M):
-* Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards
-* MQTT client/broker model implementation on Raspbian Jessie OS running over Raspberry Pi 3 Gateway design for IoT Applications which supports multiple service functionalities including
+* <div style="text-align: justify">Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards.</div>
+* <div style="text-align: justify">MQTT client/broker model implementation on Raspbian Jessie OS running over Raspberry Pi 3 Gateway design for IoT Applications which supports multiple service functionalities including:</div>
     - Registration
     - Security Association and Establishment (SAE)
     - Data Management and Repository (DMR)
     - Access Control Policies (ACPs)
     - Subscription and Notification
     - Secure MQTT/MQTT-SN Binding
-* Transport Layer Protocol DTLS/UDP and TLS/TCP implementation. 
-* Serialization/de-serialization of JSON request/response packets 
-* DTLS Support for MQTT-SN Multi-threaded Gateway Application
+* Transport Layer Protocol DTLS/UDP and TLS/TCP implementation.
+* Serialization/de-serialization of JSON request/response packets.
+* DTLS Support for MQTT-SN Multi-threaded Gateway Application.
 
 #### Other Projects:
-* Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols
-* Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. 
-* Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules
-* Automation of Paddy Dryer for Rice Mill industry and UET Water Tanks 
-* Simulation and Modeling of Solar angles for Tracking Surface in MATLAB 
-* PLC SCADA control for Dual Axis Solar Tracking System
-* Design and Development of Motor Test Bench for PCSIR Laboratories 
-* Short Course Instructor for Programmable Logic Controller (PLC)
-* Development of Energy Efficiency Advisory course in collaboration with sequa gGmbH – GiZ
+* <div style="text-align: justify">Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols. </div>
+* <div style="text-align: justify">Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. </div>
+* <div style="text-align: justify">Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules. </div>
+* <div style="text-align: justify">Automation of Paddy Dryer for Rice Mill industry and UET Water Tanks. </div>
+* <div style="text-align: justify">Simulation and Modeling of Solar angles for Tracking Surface in MATLAB. </div>
+* <div style="text-align: justify">PLC SCADA control for Dual Axis Solar Tracking System. </div>
+* <div style="text-align: justify">Design and Development of Motor Test Bench for PCSIR Laboratories. </div>
+* <div style="text-align: justify">Short Course Instructor for Programmable Logic Controller (PLC). </div>
+* <div style="text-align: justify">Development of Energy Efficiency Advisory course in collaboration with sequa gGmbH – GiZ. </div>
 
 ## SKILLS
 * STM32 Nucleo-64 boards 
