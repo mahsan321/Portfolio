@@ -11,10 +11,12 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 
 
 ## RESEARCH INTEREST
---------------
-* Network Security   
-* Cyber-Physical System
-* Industrial IoT
+--------------  
+* Cyber-Physical System 
+* Security
+* Additive Manufacturing
+* Industry 4.0
+* Internet of Things
 
 ## PUBLICATIONS
 ------------
