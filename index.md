@@ -34,6 +34,8 @@ Aug 2021 - Current
 Position: Team Lead
 <br>
 Oct 2014 - July 2021
+
+## PROJECTS
 #### [OneM2M Framework](https://github.com/AikM2M):
 * <div style="text-align: justify">Implementation of Horizontal Layer OneM2M Standard Framework for M2M and IoTs Sensor Nodes on MbedOS running over Nucleo STM32 L476rg boards.</div>
 * <div style="text-align: justify">MQTT client/broker model implementation on Raspbian Jessie OS running over Raspberry Pi 3 Gateway design for IoT Applications which supports multiple service functionalities including:</div>
