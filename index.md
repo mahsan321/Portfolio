@@ -7,7 +7,7 @@ Tel No.: (+1)-804-591-6460
 <br>
 Github: [mahsan321](https://github.com/mahsan321)
 <br>
-[Google Scholar](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=en&oi=sra)
+Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=en&oi=sra)
 
 
 ## RESEARCH INTEREST
