@@ -19,10 +19,10 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 
 
 ## PUBLICATIONS
-* Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "SecGW: On Providing DTLS based Multi-threading in MQTT-SN Gateway Application", (In-Progress)
-* Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022
-* Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "OneM2M Architecture Based Secure MQTT Binding in Mbed OS", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.
-* Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices", IEEE Globecom 2019.
+* <div style="text-align: justify"> Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "SecGW: On Providing DTLS based Multi-threading in MQTT-SN Gateway Application", (Under-Review)</div>
+* <div style="text-align: justify"> Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "OneM2M Architecture Based Secure MQTT Binding in Mbed OS", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.</div>
+* <div style="text-align: justify"> Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices", IEEE Globecom 2019.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
 
 ## EXPERIENCE
