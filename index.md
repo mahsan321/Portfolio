@@ -33,7 +33,7 @@ Oct 2014 - July 2021
 * Serialization/de-serialization of JSON request/response packets 
 * DTLS Support for MQTT-SN Multi-threaded Gateway Application
 
-#### [Other Projects]:
+#### Other Projects:
 * Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols
 * Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. 
 * Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules
