@@ -60,16 +60,6 @@ Oct 2014 - July 2021
 * <div style="text-align: justify">Short Course Instructor for Programmable Logic Controller (PLC). </div>
 * <div style="text-align: justify">Development of Energy Efficiency Advisory course in collaboration with sequa gGmbH – GiZ. </div>
 
-## SKILLS
-* STM32 Nucleo-64 boards 
-* Embedded C 
-* MBed OS (Open-Source Embedded Operating System)   
-* USART, SPI and ADC/DAC protocol for sensor interfacing
-* Raspberry Pi 3
-* Python
-* Arduino Boards
-* ESP8266 Module
-
 ## ACADEMIC ACTIVITIES
 * ICOSST’16, ICOSST’17, ICOSST’18 and ICOSST’19 Event Organizer.
 * ICECE’17 and ICECE’18 Event Organizer.
