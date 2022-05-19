@@ -26,11 +26,11 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 * <div style="text-align: justify"> Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
 
 ## EXPERIENCE
-### Security and Forensics Engineering (SAFE) LAB, VCU, Richomond
+#### Security and Forensics Engineering (SAFE) LAB, VCU, Richomond
 Position: Graduate Assistant
 <br>
 Aug 2021 - Current
-### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
+#### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
 Position: Team Lead
 <br>
 Oct 2014 - July 2021
