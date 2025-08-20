@@ -20,6 +20,7 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 
 ## PUBLICATIONS
 * <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "PrintSafe - A near real-time anomaly detection framework for fused filament fabrication printing using printing environment estimation", (Under-Review)</div>
+* <div style="text-align: justify"> 22. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Eunice Pak, Kate Jackson, Muhammad Haris Rais, Barry Najarro-Blancas, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10917538/">BioSaFe: Bioprinting Security Framework for Detecting Sabotage Attacks on Printability and Cell Viability<\a>", ACSAC, 2024, Hawaii.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/abstract/document/11050063">WattShield: A Power Side-Channel Framework for Detecting Malicious Firmware in Fused Filament Fabrication <\a>", HOST, 2025, CA.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Barry Najarro-Blancas, Johanna Tsala Ebode, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/11050047">3D Bioprinter Firmware Attacks: Categorization, Implementation, and Impacts <\a>", HOST, 2025, CA.</div>
