@@ -11,25 +11,21 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 
 
 ## RESEARCH INTEREST  
-* Cyber-Physical System 
-* Security
+* Cyber-Physical System
+* Cybersecurity
+* Artificial Intelligence
 * Additive Manufacturing
 * Industry 4.0
 * Internet of Things
 
-
-## PUBLICATIONS
-* <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "PrintSafe - A near real-time anomaly detection framework for fused filament fabrication printing using printing environment estimation", (Under-Review)</div>
-* <div style="text-align: justify"> 22. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Eunice Pak, Kate Jackson, Muhammad Haris Rais, Barry Najarro-Blancas, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10917538/">BioSaFe: Bioprinting Security Framework for Detecting Sabotage Attacks on Printability and Cell Viability<\a>", ACSAC, 2024, Hawaii.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/abstract/document/11050063">WattShield: A Power Side-Channel Framework for Detecting Malicious Firmware in Fused Filament Fabrication <\a>", HOST, 2025, CA.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Barry Najarro-Blancas, Johanna Tsala Ebode, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/11050047">3D Bioprinter Firmware Attacks: Categorization, Implementation, and Impacts <\a>", HOST, 2025, CA.</div>
-* <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "<a href="https://www.usenix.org/conference/woot24/presentation/rais">SOK: 3D Printer Firmware Attacks on Fused Filament Fabrication<\a>", WOOT, 2024, PA.</div>
-* <div style="text-align: justify"> Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "<a href="https://www.sciencedirect.com/science/article/pii/S2542660524001136">D4GW: DTLS for gateway multiplexed application to secure MQTT(SN)-based pub/sub architecture<\a>", Elsevier IoT hournal</div>
-* <div style="text-align: justify"> Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "<a href="https://ieeexplore.ieee.org/abstract/document/8802473">OneM2M Architecture Based Secure MQTT Binding in Mbed OS</a>", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.</div>
-* <div style="text-align: justify"> Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "<a href = "https://ieeexplore.ieee.org/abstract/document/9013863">MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices</a>", IEEE Globecom 2019.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
+## Awards
+* US Cyber Command Cyber Recon 2025, Best category Defender Award.
+* US Cyber Command Cyber Recon 2024, Best category Guardian award.
+* US Cyber Command Cyber Recon 2024, Commander’s award for outstanding research.
+* 4-star challenge coin, Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.
+* People’s Choice Award 2024, MegaHack@VCU
+* Dean’s Honor Certificate (5 semesters), UET Lahore.
+* B.Sc. Electrical Engineering with honors.
 
 ## EXPERIENCE
 #### Security and Forensics Engineering (SAFE) LAB, VCU, Richomond
@@ -40,6 +36,21 @@ Aug 2021 - Current
 Position: Team Lead
 <br>
 Oct 2014 - July 2021
+
+## PUBLICATIONS
+* <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "PrintSafe - A near real-time anomaly detection framework for fused filament fabrication printing using printing environment estimation", (Under-Review)</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Eunice Pak, Kate Jackson, Muhammad Haris Rais, Barry Najarro-Blancas, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10917538/">BioSaFe: Bioprinting Security Framework for Detecting Sabotage Attacks on Printability and Cell Viability</a>", ACSAC, 2024, Hawaii.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Muhammad Haris Rais, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10190501/">Sok: Side channel monitoring for additive manufacturing-bridging cybersecurity and quality assurance communities</a>", ACSAC, 2024, Hawaii.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/abstract/document/11050063">WattShield: A Power Side-Channel Framework for Detecting Malicious Firmware in Fused Filament Fabrication </a>", HOST, 2025, CA.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Barry Najarro-Blancas, Johanna Tsala Ebode, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/11050047">3D Bioprinter Firmware Attacks: Categorization, Implementation, and Impacts </a>", HOST, 2025, CA.</div>
+* <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "<a href="https://www.usenix.org/conference/woot24/presentation/rais">SOK: 3D Printer Firmware Attacks on Fused Filament Fabrication</a>", WOOT, 2024, PA.</div>
+* <div style="text-align: justify"> Bilal Imran, Muhammad Ahsan, Ali Hammad Akbar, Ghalib A. Shah, "<a href="https://www.sciencedirect.com/science/article/pii/S2542660524001136">D4GW: DTLS for gateway multiplexed application to secure MQTT(SN)-based pub/sub architecture</a>", Elsevier IoT hournal</div>
+* <div style="text-align: justify"> Muhammad Rais, Muhammad Ahsan, Vaibhav Sharma, Radhika Barua, Robert Prins and Irfan Ahmed, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-20137-0_8">Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers</a>”, International Conference on Critical Infrastructure Protection. Springer, Cham, 2022.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "<a href="https://ieeexplore.ieee.org/abstract/document/8802473">OneM2M Architecture Based Secure MQTT Binding in Mbed OS</a>", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.</div>
+* <div style="text-align: justify"> Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "<a href = "https://ieeexplore.ieee.org/abstract/document/9013863">MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices</a>", IEEE Globecom 2019.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
+
+
 
 ## PROJECTS
 #### [OneM2M Framework](https://github.com/AikM2M):
@@ -69,3 +80,4 @@ Oct 2014 - July 2021
 ## ACADEMIC ACTIVITIES
 * ICOSST’16, ICOSST’17, ICOSST’18 and ICOSST’19 Event Organizer.
 * ICECE’17 and ICECE’18 Event Organizer.
+* Reviewer Services: IEEE IoT Journal, FSI Digital Investigation, Computers & Security, ACM Transactions on Cyber-Physical Systems
