@@ -20,7 +20,7 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 
 ## Awards
 * <div style="text-align: justify">US Cyber Command Cyber Recon 2025, Best category Defender Award.</div>
-* US Cyber Command Cyber Recon 2024, Best category Guardian award.
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2024, Best category Guardian award.</div>
 * <div style="text-align: justify">US Cyber Command Cyber Recon 2024, Commander’s award for outstanding research.</div>
 * <div style="text-align: justify"> 4-star challenge coin, Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.</div>
 * People’s Choice Award 2024, MegaHack@VCU
