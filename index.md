@@ -19,20 +19,20 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 * Internet of Things
 
 ## Awards
-* US Cyber Command Cyber Recon 2025, Best category Defender Award.
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2025, Best category Defender Award.</div>
 * US Cyber Command Cyber Recon 2024, Best category Guardian award.
-* US Cyber Command Cyber Recon 2024, Commander’s award for outstanding research.
-* 4-star challenge coin, Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2024, Commander’s award for outstanding research.</div>
+* <div style="text-align: justify"> 4-star challenge coin, Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.</div>
 * People’s Choice Award 2024, MegaHack@VCU
 * Dean’s Honor Certificate (5 semesters), UET Lahore.
 * B.Sc. Electrical Engineering with honors.
 
 ## EXPERIENCE
-#### Security and Forensics Engineering (SAFE) LAB, VCU, Richomond
+#### Security and Forensics Engineering (SAFE) LAB, VCU, Richmond, USA
 Position: Graduate Assistant
 <br>
 Aug 2021 - Current
-#### Al-Khawarizmi Institute of Computer Science (KICS) UET, Lahore 
+#### Al-Khawarizmi Institute of Computer Science (KICS), UET, Lahore, Pakistan 
 Position: Team Lead
 <br>
 Oct 2014 - July 2021
