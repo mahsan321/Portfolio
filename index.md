@@ -38,9 +38,10 @@ Position: Team Lead
 Oct 2014 - July 2021
 
 ## PUBLICATIONS
+* <div style="text-align: justify"> Muhammad Ahsan, Johanna Tsala Ebode, Nastassja Lewinski, Irfan Ahmed, "BioShield: A Power Side-Channel based Bioprinter Security Framework for Detecting Sabotage Attacks", NDSS (Under-Review)</div>
 * <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "PrintSafe - A near real-time anomaly detection framework for fused filament fabrication printing using printing environment estimation", (Under-Review)</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Eunice Pak, Kate Jackson, Muhammad Haris Rais, Barry Najarro-Blancas, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10917538/">BioSaFe: Bioprinting Security Framework for Detecting Sabotage Attacks on Printability and Cell Viability</a>", ACSAC, 2024, Hawaii.</div>
-* <div style="text-align: justify"> Muhammad Ahsan, Muhammad Haris Rais, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10190501/">Sok: Side channel monitoring for additive manufacturing-bridging cybersecurity and quality assurance communities</a>", ACSAC, 2024, Hawaii.</div>
+* <div style="text-align: justify"> Muhammad Ahsan, Muhammad Haris Rais, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/10190501/">Sok: Side channel monitoring for additive manufacturing-bridging cybersecurity and quality assurance communities</a>", IEEE European Symposium on Security and Privacy, 2023, Hawaii.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/abstract/document/11050063">WattShield: A Power Side-Channel Framework for Detecting Malicious Firmware in Fused Filament Fabrication </a>", HOST, 2025, CA.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Barry Najarro-Blancas, Johanna Tsala Ebode, Nastassja Lewinski, Irfan Ahmed, "<a href="https://ieeexplore.ieee.org/document/11050047">3D Bioprinter Firmware Attacks: Categorization, Implementation, and Impacts </a>", HOST, 2025, CA.</div>
 * <div style="text-align: justify"> Muhammad Haris Rais, Muhammad Ahsan, Irfan Ahmed, "<a href="https://www.usenix.org/conference/woot24/presentation/rais">SOK: 3D Printer Firmware Attacks on Fused Filament Fabrication</a>", WOOT, 2024, PA.</div>
@@ -49,6 +50,19 @@ Oct 2014 - July 2021
 * <div style="text-align: justify"> Muhammad Ahsan, Bilal Afzal, Bilal Imran, Asim Tanwir, Ali Hammad Akbar and Galib. A. Shah. "<a href="https://ieeexplore.ieee.org/abstract/document/8802473">OneM2M Architecture Based Secure MQTT Binding in Mbed OS</a>", SSIoT 2019 - IEEE Euro S&P Workshop on Software Security for Internet of Things.</div>
 * <div style="text-align: justify"> Bilal Imran, Bilal Afzal, Dr. Ali Hammad Akbar, Muhammad Ahsan, Dr. Ghalib A. Shah. "<a href = "https://ieeexplore.ieee.org/abstract/document/9013863">MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices</a>", IEEE Globecom 2019.</div>
 * <div style="text-align: justify"> Muhammad Ahsan, Naseer Ahmad, Waqas Badar. "<a href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar angles for maximizing Efficiency of Solar Thermal Collectors</a>", 3rd International Conference on Energy Conservation and Efficiency (ICECE), 2019.</div>
+
+
+## Peer reviewed Tutorials/Hardware-Demos/Posters
+
+* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D-Bioprinting Systems against Adversarial Manipulations", Poster **CCI Symposium 2026** </div>
+* <div style="text-align: justify"> "Supply Chain Resilience in Industrial Control Systems", HW tutorial **HOST Conference** 2026 </div>
+* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D Bioprinting Systems Against Adversarial Manipulation", HW Demo **HOST Conference 2026** </div>
+* <div style="text-align: justify"> "3D Bioprinter Firmware Attacks and their Implications" Poster **CCI Symposium 2025** </div>
+* <div style="text-align: justify"> "Firmware Attacks on Inkredible+ 3D Bioprinter" HW Demo **HOST Conference 2025** </div>
+* <div style="text-align: justify"> "A Framework for detecting Sabotage attacks on 3D Bioprinters using Side Channel Monitoring" Poster **CCI Symposium 2024** </div>
+* <div style="text-align: justify"> "BioSaFe: Bioprinting security framework for in-situ process monitoring", HW Demo **HOST Conference 2024** </div>
+* <div style="text-align: justify"> "The Troubled Elevator: Forensic Investigation of a Bank’s Elevator Malfunctioning” **DFRWS 2023** Challenge on Industrial Control System Forensics </div>
+* <div style="text-align: justify"> "Bioprinting Security Framework for detecting Sabotage attacks using in situ Process Monitoring", Poster **ACSAC Conference 2023** </div>
 
 
 
