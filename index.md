@@ -19,13 +19,14 @@ Google Scholar [link](https://scholar.google.com/citations?user=he1clHEAAAAJ&hl=
 * Internet of Things
 
 ## Awards
-* <div style="text-align: justify">US Cyber Command Cyber Recon 2025, Best category Defender Award.</div>
-* <div style="text-align: justify">US Cyber Command Cyber Recon 2024, Best category Guardian award.</div>
-* <div style="text-align: justify">US Cyber Command Cyber Recon 2024, Commander’s award for outstanding research.</div>
-* <div style="text-align: justify"> 4-star challenge coin, Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.</div>
-* People’s Choice Award 2024, MegaHack@VCU
-* Dean’s Honor Certificate (5 semesters), UET Lahore.
-* B.Sc. Electrical Engineering with honors.
+* <div style="text-align: justify">Student Travel Awards - ACSAC 2023 Student Conferenceship, NSF travel funding (2024, 2025, 2026) to attend HOST conference.</div>
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2025 - Best category Defender Award.</div>
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2024 - Best category Guardian award.</div>
+* <div style="text-align: justify">US Cyber Command Cyber Recon 2024 - Commander’s award for outstanding research.</div>
+* <div style="text-align: justify">4-star challenge coin - Got recognized by General Timothy D. Haugh, commander of the United States Cyber Command and director of the National Security Agency.</div>
+* <div style="text-align: justify">People’s Choice Award 2024, MegaHack@VCU </div>
+* <div style="text-align: justify">Dean’s Honor Certificate (5 semesters), UET Lahore.</div>
+* <div style="text-align: justify">B.Sc. Electrical Engineering with honors.</div>
 
 ## EXPERIENCE
 #### Security and Forensics Engineering (SAFE) LAB, VCU, Richmond, USA
