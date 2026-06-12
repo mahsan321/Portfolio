@@ -54,15 +54,15 @@ Oct 2014 - July 2021
 
 ## Peer reviewed Tutorials/Hardware-Demos/Posters
 
-* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D-Bioprinting Systems against Adversarial Manipulations", Poster **CCI Symposium 2026** </div>
-* <div style="text-align: justify"> "Supply Chain Resilience in Industrial Control Systems", HW tutorial **HOST Conference** 2026 </div>
-* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D Bioprinting Systems Against Adversarial Manipulation", HW Demo **HOST Conference 2026** </div>
-* <div style="text-align: justify"> "3D Bioprinter Firmware Attacks and their Implications" Poster **CCI Symposium 2025** </div>
-* <div style="text-align: justify"> "Firmware Attacks on Inkredible+ 3D Bioprinter" HW Demo **HOST Conference 2025** </div>
-* <div style="text-align: justify"> "A Framework for detecting Sabotage attacks on 3D Bioprinters using Side Channel Monitoring" Poster **CCI Symposium 2024** </div>
-* <div style="text-align: justify"> "BioSaFe: Bioprinting security framework for in-situ process monitoring", HW Demo **HOST Conference 2024** </div>
-* <div style="text-align: justify"> "The Troubled Elevator: Forensic Investigation of a Bank’s Elevator Malfunctioning” **DFRWS 2023** Challenge on Industrial Control System Forensics </div>
-* <div style="text-align: justify"> "Bioprinting Security Framework for detecting Sabotage attacks using in situ Process Monitoring", Poster **ACSAC Conference 2023** </div>
+* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D-Bioprinting Systems against Adversarial Manipulations", Poster CCI Symposium 2026 </div>
+* <div style="text-align: justify"> "Supply Chain Resilience in Industrial Control Systems", HW tutorial HOST Conference 2026 </div>
+* <div style="text-align: justify"> "When Code Meets Cells: Securing 3D Bioprinting Systems Against Adversarial Manipulation", HW Demo HOST Conference 2026 </div>
+* <div style="text-align: justify"> "3D Bioprinter Firmware Attacks and their Implications" Poster CCI Symposium 2025 </div>
+* <div style="text-align: justify"> "Firmware Attacks on Inkredible+ 3D Bioprinter" HW Demo HOST Conference 2025 </div>
+* <div style="text-align: justify"> "A Framework for detecting Sabotage attacks on 3D Bioprinters using Side Channel Monitoring" Poster CCI Symposium 2024 </div>
+* <div style="text-align: justify"> "BioSaFe: Bioprinting security framework for in-situ process monitoring", HW Demo HOST Conference 2024 </div>
+* <div style="text-align: justify"> "The Troubled Elevator: Forensic Investigation of a Bank’s Elevator Malfunctioning" DFRWS 2023 Challenge on Industrial Control System Forensics </div>
+* <div style="text-align: justify"> "Bioprinting Security Framework for detecting Sabotage attacks using in situ Process Monitoring", Poster ACSAC Conference 2023 </div>
 
 
 
