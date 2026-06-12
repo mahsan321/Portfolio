@@ -82,17 +82,15 @@ Oct 2014 - July 2021
 * DTLS Support for MQTT-SN Multi-threaded Gateway Application.
 
 #### Other Projects:
-* <div style="text-align: justify">Firewall rules Analyzing, Writing and Testing for SCADA/IoT Protocols. </div>
-* <div style="text-align: justify">Use of different tools for Scanning, Sniffing, Spoofing, MITM and other Attack Vectors generation. </div>
-* <div style="text-align: justify">Common Vulnerabilities and Exposures (CVE) reproduction for generation of different attacks on network to test Firewall rules. </div>
-* <div style="text-align: justify">Automation of Paddy Dryer for Rice Mill industry and UET Water Tanks. </div>
-* <div style="text-align: justify">Simulation and Modeling of Solar angles for Tracking Surface in MATLAB. </div>
-* <div style="text-align: justify">PLC SCADA control for Dual Axis Solar Tracking System. </div>
-* <div style="text-align: justify">Design and Development of Motor Test Bench for PCSIR Laboratories. </div>
-* <div style="text-align: justify">Short Course Instructor for Programmable Logic Controller (PLC). </div>
-* <div style="text-align: justify">Development of Energy Efficiency Advisory course in collaboration with sequa gGmbH – GiZ. </div>
+* <div style="text-align: justify"> <strong>Lightweight Security Framework for IoT:</strong> Designed a lightweight security framework addressing interoperability and security challenges in IoT ecosystems aligned with the oneM2M standard, focusing on secure device communication and scalable deployment.</div>
+* <div style="text-align: justify"> <strong>Smart Home Cyber-Physical Platform: </strong> Designed and implemented a customized smart home testbed, including development of an embedded gateway enabling secure integration and control of smart plugs and switchboards for experimentation with IoT system architectures. </div>
+* <div style="text-align: justify"> <strong>LoRaWAN-based Smart Irrigation System:</strong> Developed a long-range IoT sensing framework using LoRaWAN for real-time acquisition, processing, and mobile visualization of soil moisture data to support data-driven precision agriculture. </div>
+* <div style="text-align: justify"> <strong>Security Analysis of IoT/SCADA Firewalls:</strong> Designed and evaluated firewall rule sets for industrial IoT and SCADA protocols through vulnerability-driven testing and adversarial network traffic generation. </div>
+* <div style="text-align: justify"> <strong>Industrial Automation Systems:</strong> Developed automation solutions for agricultural and infrastructure applications, including paddy dryer control in rice mills and automated monitoring of large-scale water storage systems. </div>
+* <div style="text-align: justify"> <strong> Solar Thermal Tracking Systems: </strong> Contributed to the design and implementation of control algorithms for solar tracking in industrial heliostats and parabolic trough collectors to improve energy harvesting efficiency. </div>
+* <div style="text-align: justify"> <strong>IEC-Compliant Motor Test Bench:</strong> Designed and developed an industrial motor test platform compliant with IEC 60034-2-1 standards for evaluation of motor performance and efficiency. </div>
 
-## ACADEMIC ACTIVITIES
+## ACADEMIC SERVICE
 * ICOSST’16, ICOSST’17, ICOSST’18 and ICOSST’19 Event Organizer.
 * ICECE’17 and ICECE’18 Event Organizer.
 * Reviewer Services: IEEE IoT Journal, FSI Digital Investigation, Computers & Security, ACM Transactions on Cyber-Physical Systems
