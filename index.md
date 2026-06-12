@@ -91,6 +91,6 @@ Oct 2014 - July 2021
 * <div style="text-align: justify"> <strong>IEC-Compliant Motor Test Bench:</strong> Designed and developed an industrial motor test platform compliant with IEC 60034-2-1 standards for evaluation of motor performance and efficiency. </div>
 
 ## ACADEMIC SERVICE
-* ICOSST’16, ICOSST’17, ICOSST’18 and ICOSST’19 Event Organizer.
-* ICECE’17 and ICECE’18 Event Organizer.
-* Reviewer Services: IEEE IoT Journal, FSI Digital Investigation, Computers & Security, ACM Transactions on Cyber-Physical Systems
+* <div style="text-align: justify"> <strong> Conference Organization and Management:</strong> Contributed to conference organization and management activities for IEEE ICOSST (2016--2019) and IEEE ICECE (2017, 2018), supporting technical program coordination, reviewing process, and event operations. </div>
+
+* <div style="text-align: justify"> <strong> Journal Reviewer: </strong> Served as a peer reviewer for leading journals including IEEE Internet of Things Journal, ACM Transactions on Cyber-Physical Systems (TCPS), Forensic Science International: Digital Investigation, and Computers & Security. </div>
