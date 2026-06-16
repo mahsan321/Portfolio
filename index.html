@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muhammad Ahsan — Cyber-Physical Systems Security</title>
+<meta name="description" content="Muhammad Ahsan, PhD candidate in Computer Science at VCU. Research on cyber-physical systems security, side-channel analysis, and machine learning for security." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #f1f3f4;
+    --panel: #fbfcfc;
+    --ink: #14181c;
+    --ink-soft: #4a5159;
+    --ink-faint: #6c747c;
+    --line: #d6dbde;
+    --line-soft: #e6eaec;
+    --signal: #cf5c08;
+    --signal-deep: #a8470a;
+    --signal-wash: rgba(207, 92, 8, 0.08);
+    --maxw: 980px;
+    --gap: clamp(64px, 9vw, 120px);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 10px 16px;
+    z-index: 100;
+  }
+  .skip:focus { left: 8px; top: 8px; }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(241, 243, 244, 0.88);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .mark {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .mark .dot { color: var(--signal); }
+  .nav-links {
+    display: flex;
+    gap: 22px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .nav-links a:hover,
+  .nav-links a:focus-visible { color: var(--ink); border-color: var(--signal); }
+  @media (max-width: 680px) { .nav-links { display: none; } }
+
+  /* ---------- hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+    background:
+      repeating-linear-gradient(0deg, transparent 0 39px, var(--line-soft) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, var(--line-soft) 39px 40px);
+  }
+  .trace {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    pointer-events: none;
+  }
+  .trace path {
+    fill: none;
+    stroke: var(--signal);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 6px rgba(207, 92, 8, 0.35));
+  }
+  .trace .draw {
+    stroke-dasharray: 4200;
+    stroke-dashoffset: 4200;
+    animation: draw 2.4s ease-out 0.2s forwards;
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(72px, 12vw, 130px) 24px clamp(96px, 14vw, 150px);
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--signal-deep);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-size: clamp(40px, 7.5vw, 76px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    margin: 0 0 18px;
+  }
+  .lede {
+    font-size: clamp(18px, 2.4vw, 22px);
+    color: var(--ink-soft);
+    max-width: 30ch;
+    margin: 0 0 28px;
+  }
+  .lede b { color: var(--ink); font-weight: 600; }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 7px 12px;
+    margin-bottom: 28px;
+  }
+  .status .led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 0 3px var(--signal-wash);
+  }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn:hover, .btn:focus-visible { background: var(--ink); color: var(--bg); }
+  .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .btn.primary:hover, .btn.primary:focus-visible { background: var(--signal); border-color: var(--signal); color: #fff; }
+
+  /* ---------- sections ---------- */
+  section { padding: var(--gap) 0; border-bottom: 1px solid var(--line); }
+  .sec-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--signal-deep);
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin: 0 0 28px;
+    font-weight: 700;
+  }
+  h3 { font-size: 19px; margin: 0 0 6px; font-weight: 600; }
+  p { margin: 0 0 16px; }
+  .prose { max-width: 64ch; color: var(--ink-soft); }
+  .prose b { color: var(--ink); }
+
+  /* interests */
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 7px 12px;
+  }
+
+  /* publications */
+  .pub-group-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+    margin: 36px 0 18px;
+  }
+  .pub-group-label:first-of-type { margin-top: 0; }
+  ol.pubs { list-style: none; margin: 0; padding: 0; }
+  ol.pubs li {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 14px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line-soft);
+  }
+  ol.pubs li:first-child { border-top: none; }
+  .pub-num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding-top: 2px;
+  }
+  .pub-title {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    transition: border-color 0.15s;
+  }
+  .pub-title:hover, .pub-title:focus-visible { border-color: var(--signal); }
+  .pub-authors { color: var(--ink-soft); font-size: 15px; margin-top: 4px; }
+  .pub-authors .me { color: var(--ink); font-weight: 600; }
+  .pub-venue {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-faint);
+    margin-top: 5px;
+  }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .badge {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    background: var(--panel);
+  }
+  .badge.hot { color: var(--signal-deep); border-color: rgba(207,92,8,0.4); background: var(--signal-wash); }
+  .badge.live { color: var(--ink); border-style: dashed; }
+
+  /* experience / timeline rows */
+  .row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 28px;
+    padding: 26px 0;
+    border-top: 1px solid var(--line-soft);
+  }
+  .row:first-of-type { border-top: none; }
+  .row .when {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  .row .where { color: var(--ink-soft); font-size: 15px; margin-top: 2px; }
+  .row ul { margin: 12px 0 0; padding-left: 18px; color: var(--ink-soft); }
+  .row ul li { margin-bottom: 6px; }
+  @media (max-width: 680px) {
+    .row { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  /* awards */
+  .award-list { list-style: none; margin: 0; padding: 0; }
+  .award-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line-soft);
+    color: var(--ink-soft);
+  }
+  .award-list li:first-child { border-top: none; }
+  .award-list li b { color: var(--ink); font-weight: 600; }
+  .feature {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--signal);
+    border-radius: 2px;
+    padding: 22px 24px;
+    margin-bottom: 28px;
+  }
+  .feature p { margin: 0; color: var(--ink-soft); }
+  .feature b { color: var(--ink); }
+
+  /* contact */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .contact-grid a, .contact-grid div {
+    background: var(--panel);
+    padding: 20px 22px;
+    text-decoration: none;
+  }
+  .contact-grid .k {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 6px;
+  }
+  .contact-grid .v { font-weight: 600; word-break: break-word; }
+  .contact-grid a:hover .v, .contact-grid a:focus-visible .v { color: var(--signal-deep); }
+
+  footer {
+    padding: 40px 0 64px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+  :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .trace .draw { animation: none; stroke-dashoffset: 0; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="#top">M<span class="dot">.</span>Ahsan</a>
+    <div class="nav-links">
+      <a href="#research">research</a>
+      <a href="#publications">publications</a>
+      <a href="#experience">experience</a>
+      <a href="#awards">awards</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="trace" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-hidden="true">
+    <path class="draw" d="M 0 170 L 60 170 L 80 90 L 100 165 L 140 165 L 160 60 L 180 150 L 210 150 L 230 110 L 250 168 L 320 168 L 340 75 L 360 160 L 400 160 L 420 120 L 445 120 L 465 70 L 490 165 L 560 165 L 585 100 L 610 165 L 660 165 L 685 55 L 710 150 L 760 150 L 785 130 L 810 130 L 835 80 L 860 168 L 930 168 L 955 95 L 980 160 L 1030 160 L 1055 65 L 1080 155 L 1130 155 L 1155 115 L 1200 115" />
+  </svg>
+  <div class="hero-inner">
+    <p class="eyebrow">CPS Security · Side-Channel Analysis · ML for Security</p>
+    <h1>Muhammad Ahsan</h1>
+    <p class="lede">I read the <b>signals machines leak</b> to find out when they have been attacked.</p>
+    <div class="status">
+      <span class="led" aria-hidden="true"></span>
+      PhD expected Jul 2026 · on the academic job market
+    </div>
+    <div class="cta-row">
+      <!-- TODO: replace href with your hosted CV path, e.g. assets/CV-Muhammad_Ahsan.pdf --> 
+      <a class="btn primary" href="https://github.com/mahsan321/Portfolio/blob/master/pdf/CV_Ahsan.pdf">Download CV (PDF)</a>
+      <a class="btn" href="mailto:ahsanm5@vcu.edu">Email</a>
+      <!-- TODO: add your real Google Scholar and GitHub URLs -->
+      <a class="btn" href="https://scholar.google.com/citations?user=blP2CFQAAAAJ&hl=en">Google Scholar</a>
+      <a class="btn" href="https://github.com/mahsan321">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <p class="sec-label">About</p>
+      <h2>Securing connected physical infrastructure.</h2>
+      <div class="prose">
+        <p>I am a PhD candidate in Computer Science at Virginia Commonwealth University, with more than ten years of research experience in cybersecurity, IoT security, machine learning, and cyber-physical systems.</p>
+        <p>My work sits at the <b>hardware-software boundary</b>. I use side-channel sensing, such as power and electromagnetic emissions, together with data-driven methods to monitor and protect physical processes. The main application domain is <b>additive manufacturing and 3D bioprinting</b>, where I study both how these systems can be attacked and how to detect those attacks in real time. The goal is trustworthy, resilient cyber-physical manufacturing.</p>
+        <p>I care about teaching as much as research, with interests across cybersecurity education, digital forensics, and embedded systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH INTERESTS -->
+  <section id="research">
+    <div class="wrap">
+      <p class="sec-label">Research interests</p>
+      <h2>Where I work.</h2>
+      <div class="tags">
+        <span class="tag">Cyber-Physical Systems Security</span>
+        <span class="tag">Side-Channel Analysis</span>
+        <span class="tag">Secure Additive Manufacturing</span>
+        <span class="tag">3D Bioprinting Security</span>
+        <span class="tag">AI / ML for Security</span>
+        <span class="tag">IoT &amp; Embedded Systems Security</span>
+        <span class="tag">Digital Forensics</span>
+        <span class="tag">Malware Analysis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="wrap">
+      <p class="sec-label">Publications</p>
+      <h2>Selected peer-reviewed work.</h2>
+      <p class="prose">A complete list is in my <a href="https://github.com/mahsan321/Portfolio/blob/master/pdf/CV_Ahsan.pdf">CV</a>. Bold names mark my contribution. Click a title for the paper.</p>
+
+      <p class="pub-group-label">// Conference &amp; journal papers</p>
+      <ol class="pubs">
+        <li>
+          <span class="pub-num">01</span>
+          <div>
+            <!-- TODO: link to paper / preprint -->
+            <a class="pub-title">BioShield: A Power Side-Channel-Based Monitoring Framework for Ensuring 3D Bioprinting Process Integrity</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, J. Tsala Ebode, N. Lewinski, I. Ahmed</div>
+            <div class="pub-venue">NDSS Symposium</div>
+            <div class="badges"><span class="badge live">Under review</span><span class="badge hot">CORE A</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">02</span>
+          <div>
+            <a class="pub-title">PrintSafe: A near real-time anomaly detection framework for fused filament fabrication using printing environment estimation</a>
+            <div class="pub-authors">M. H. Rais, <span class="me">M. Ahsan</span>, I. Ahmed</div>
+            <div class="pub-venue">Journal of Manufacturing Processes</div>
+            <div class="badges"><span class="badge live">Under review</span><span class="badge hot">Q1 · IF 6.03</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">03</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/10917538/">BioSaFe: Bioprinting Security Framework for Detecting Sabotage Attacks on Printability and Cell Viability</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, E. Pak, K. Jackson, M. H. Rais, B. Najarro-Blancas, N. Lewinski, I. Ahmed</div>
+            <div class="pub-venue">ACSAC 2024 · Hawaii</div>
+            <div class="badges"><span class="badge hot">CORE A</span><span class="badge">21.5% accept</span><span class="badge">CCI 2025 Showcase</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">04</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/11050063">WattShield: A Power Side-Channel Framework for Detecting Malicious Firmware in Fused Filament Fabrication</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, I. Ahmed</div>
+            <div class="pub-venue">IEEE HOST 2025 · San Jose, CA</div>
+            <div class="badges"><span class="badge">31.6% accept</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">05</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/11050047">3D Bioprinter Firmware Attacks: Categorization, Implementation, and Impacts</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, B. Najarro-Blancas, J. Tsala Ebode, N. Lewinski, I. Ahmed</div>
+            <div class="pub-venue">IEEE HOST 2025 · CA</div>
+            <div class="badges"><span class="badge hot">Best Paper Semi-Finalist</span><span class="badge">31.6% accept</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">06</span>
+          <div>
+            <a class="pub-title" href="https://www.usenix.org/conference/woot24/presentation/rais">SoK: 3D Printer Firmware Attacks on Fused Filament Fabrication</a>
+            <div class="pub-authors">M. H. Rais, <span class="me">M. Ahsan</span>, I. Ahmed</div>
+            <div class="pub-venue">USENIX WOOT 2024 · Philadelphia, PA</div>
+            <div class="badges"><span class="badge">35% accept</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">07</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/10190501">SoK: Side Channel Monitoring for Additive Manufacturing — Bridging Cybersecurity and Quality Assurance Communities</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, M. H. Rais, I. Ahmed</div>
+            <div class="pub-venue">IEEE EuroS&amp;P 2023 · Netherlands</div>
+            <div class="badges"><span class="badge hot">CORE A</span><span class="badge">35% accept</span><span class="badge">CCI 2024 Showcase</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">08</span>
+          <div>
+            <a class="pub-title" href="https://dl.acm.org/doi/full/10.1145/3704735">Sabotaging Material Extrusion-Based 3D Printed Parts through Low-Magnitude Kinetic Manipulation Attacks</a>
+            <div class="pub-authors">M. H. Rais, <span class="me">M. Ahsan</span>, I. Ahmed</div>
+            <div class="pub-venue">ACM TCPS · Vol. 9(1), 2025</div>
+            <div class="badges"><span class="badge hot">Q1 · IF 2.3</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">09</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2542660524001136">D4GW: DTLS for Gateway Multiplexed Application to Secure MQTT(SN)-Based Pub/Sub Architecture</a>
+            <div class="pub-authors">B. Imran, <span class="me">M. Ahsan</span>, A. H. Akbar, G. A. Shah</div>
+            <div class="pub-venue">Elsevier Internet of Things Journal, 2024</div>
+            <div class="badges"><span class="badge hot">Q1 · IF 7.6</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">10</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2666281723000112">FRoMEPP: Digital Forensic Readiness Framework for Material Extrusion-Based 3D Printing Process</a>
+            <div class="pub-authors">M. H. Rais, <span class="me">M. Ahsan</span>, I. Ahmed</div>
+            <div class="pub-venue">DFRWS EU 2023 · FSI: Digital Investigation, Elsevier</div>
+            <div class="badges"><span class="badge">23% accept</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">11</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/document/10414205">LsStk: Lightweight Solution to Preventing Stack from Buffer Overflow Vulnerability</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, M. Ali</div>
+            <div class="pub-venue">IEEE ICOSST 2023</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">12</span>
+          <div>
+            <a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-3-031-20137-0_8">Low-Magnitude Infill Structure Manipulation Attacks on Fused Filament Fabrication Printers</a>
+            <div class="pub-authors">M. H. Rais, <span class="me">M. Ahsan</span>, V. Sharma, R. Barua, R. Prins, I. Ahmed</div>
+            <div class="pub-venue">IFIP ICCIP 2022 · Arlington, VA</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">13</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/8802473">oneM2M Architecture-Based Secure MQTT Binding in Mbed OS</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, B. Afzal, B. Imran, A. Tanwir, A. H. Akbar, G. A. Shah</div>
+            <div class="pub-venue">IEEE EuroS&amp;P Workshop on Software Security for IoT, 2019</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">14</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/9013863">MISA: Minimalist Implementation of oneM2M Security Architecture for Constrained IoT Devices</a>
+            <div class="pub-authors">B. Imran, B. Afzal, A. H. Akbar, <span class="me">M. Ahsan</span>, G. A. Shah</div>
+            <div class="pub-venue">IEEE GLOBECOM 2019</div>
+            <div class="badges"><span class="badge">CORE B</span><span class="badge">40% accept</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">15</span>
+          <div>
+            <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/8921376">Simulation of Solar Angles for Maximizing Efficiency of Solar Thermal Collectors</a>
+            <div class="pub-authors"><span class="me">M. Ahsan</span>, N. Ahmad, W. Badar</div>
+            <div class="pub-venue">ICECE 2019</div>
+          </div>
+        </li>
+      </ol>
+
+      <p class="pub-group-label">// Posters, hardware demos &amp; tutorials</p>
+      <ol class="pubs">
+        <li>
+          <span class="pub-num">D1</span>
+          <div>
+            <h3 style="margin:0;font-size:16px;">When Code Meets Cells: Securing 3D Bioprinting Systems Against Adversarial Manipulation</h3>
+            <div class="pub-venue">Poster, CCI Symposium 2026 · Hardware Demo, HOST 2026</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">D2</span>
+          <div>
+            <h3 style="margin:0;font-size:16px;">Supply Chain Resilience in Industrial Control Systems</h3>
+            <div class="pub-venue">Hardware Tutorial, HOST 2026</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">D3</span>
+          <div>
+            <h3 style="margin:0;font-size:16px;">Firmware Attacks on INKREDIBLE+ 3D Bioprinter</h3>
+            <div class="pub-venue">Hardware Demo, HOST 2025 · Poster, CCI Symposium 2025</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">D4</span>
+          <div>
+            <h3 style="margin:0;font-size:16px;">BioSaFe: Bioprinting Security Framework for In-Situ Process Monitoring</h3>
+            <div class="pub-venue">Hardware Demo, HOST 2024 · Poster, ACSAC 2023 &amp; CCI 2024</div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-num">D5</span>
+          <div>
+            <h3 style="margin:0;font-size:16px;">The Troubled Elevator: Forensic Investigation of a Bank's Elevator Malfunctioning</h3>
+            <div class="pub-venue">DFRWS 2023 Challenge on Industrial Control System Forensics</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="sec-label">Experience</p>
+      <h2>Research roles.</h2>
+
+      <div class="row">
+        <div>
+          <div class="when">Aug 2021 — Present</div>
+          <div class="where">SAFE Lab, VCU · Richmond</div>
+        </div>
+        <div>
+          <h3>Graduate Research Assistant</h3>
+          <p style="color:var(--ink-soft);margin:0;">Side Channels for Securing Cyber-Physical Systems. I advance security for additive manufacturing using side-channel sensing and machine learning to monitor and protect the end-to-end printing process, studying attack surfaces and defenses in polymer 3D printing and bioprinting.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="when">Oct 2014 — Jul 2021</div>
+          <div class="where">KICS, UET Lahore</div>
+        </div>
+        <div>
+          <h3>Senior Research Officer</h3>
+          <ul>
+            <li>Lightweight, oneM2M-aligned security framework for IoT device communication and scalable deployment.</li>
+            <li>Smart home cyber-physical testbed with a custom embedded gateway for secure control of smart plugs and switchboards.</li>
+            <li>LoRaWAN-based smart irrigation system for real-time soil moisture sensing and precision agriculture.</li>
+            <li>Security analysis of IoT and SCADA firewalls through vulnerability-driven testing and adversarial traffic.</li>
+            <li>Industrial automation and solar thermal tracking systems, plus an IEC 60034-2-1 compliant motor test bench.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="wrap">
+      <p class="sec-label">Awards &amp; recognition</p>
+      <h2>Selected honors.</h2>
+
+      <div class="feature">
+        <p><b>Four-Star Challenge Coin</b> presented by General Timothy D. Haugh, Commander, U.S. Cyber Command and Director, NSA, for research contributions.</p>
+      </div>
+
+      <ul class="award-list">
+        <li><b>Best Defender Award</b> — U.S. Cyber Command Cyber Recon 2025</li>
+        <li><b>Best Guardian Award</b> — U.S. Cyber Command Cyber Recon 2024</li>
+        <li><b>Commander's Award for Outstanding Research</b> — USCYBERCOM Cyber Recon 2024</li>
+        <li><b>People's Choice Award</b> — MegaHack@VCU 2024</li>
+        <li><b>Student Travel Awards</b> — ACSAC 2023; NSF travel funding for HOST (2024, 2025, 2026)</li>
+        <li><b>Dean's Honor Certificate</b> (five semesters) and <b>B.Sc. with Honors</b> — UET Lahore</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FUNDING + EDUCATION + SERVICE -->
+  <section id="more">
+    <div class="wrap">
+      <p class="sec-label">Funding</p>
+      <h2 style="margin-bottom:20px;">Proposals &amp; grants.</h2>
+      <ul class="award-list" style="margin-bottom:56px;">
+        <li><b>Securing the Layered Build: Cyber-Physical Defense in Metal Fused Filament Fabrication</b> — CCI, $100,000, 2025–2026. Co-wrote the technical portion.</li>
+        <li><b>Cybersecurity Initiative in Bioprinting</b> — CCI, $100,000, Sept 2022–Dec 2023. Co-wrote the technical portion.</li>
+      </ul>
+
+      <p class="sec-label">Education</p>
+      <h2 style="margin-bottom:20px;">Training.</h2>
+      <div class="row">
+        <div><div class="when">2021 — 2026 (exp.)</div></div>
+        <div><h3>PhD, Computer Science — Virginia Commonwealth University</h3><p style="color:var(--ink-soft);margin:0;">GPA 4.00</p></div>
+      </div>
+      <div class="row">
+        <div><div class="when">2015 — 2018</div></div>
+        <div><h3>M.S., Electrical Engineering — UET Lahore</h3><p style="color:var(--ink-soft);margin:0;">GPA 3.75</p></div>
+      </div>
+      <div class="row">
+        <div><div class="when">2010 — 2014</div></div>
+        <div><h3>B.Sc., Electrical Engineering — UET Lahore</h3><p style="color:var(--ink-soft);margin:0;">GPA 3.70 · with Honors</p></div>
+      </div>
+
+      <p class="sec-label" style="margin-top:56px;">Service</p>
+      <h2 style="margin-bottom:20px;">Reviewing &amp; teaching.</h2>
+      <div class="prose">
+        <p><b>Journal reviewer:</b> IEEE Internet of Things Journal, ACM TCPS, FSI: Digital Investigation, Computers &amp; Security.</p>
+        <p><b>Conference organization:</b> IEEE ICOSST (2016–2019), IEEE ICECE (2017–2018).</p>
+        <p><b>Teaching:</b> Graduate Teaching Assistant for CMSC 355 (Software Engineering) at VCU; instructor for PLC short courses at UET; undergraduate research mentor; invited seminar speaker.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="border-bottom:none;">
+    <div class="wrap">
+      <p class="sec-label">Contact</p>
+      <h2>Get in touch.</h2>
+      <div class="contact-grid">
+        <a href="mailto:ahsanm5@vcu.edu">
+          <div class="k">Email</div>
+          <div class="v">ahsanm5@vcu.edu</div>
+        </a>
+        <div>
+          <div class="k">Location</div>
+          <div class="v">Richmond, Virginia</div>
+        </div>
+        <!-- TODO: confirm or remove these external links -->
+        <a href="https://github.com/mahsan321">
+          <div class="k">GitHub</div>
+          <div class="v">github.com/mahsan321</div>
+        </a>
+        <a href="https://scholar.google.com/citations?user=blP2CFQAAAAJ&hl=en">
+          <div class="k">Google Scholar</div>
+          <div class="v">https://scholar.google.com/citations?user=blP2CFQAAAAJ&hl=en</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Muhammad Ahsan</span>
+    <span>Built for GitHub Pages</span>
+  </div>
+</footer>
+
+</body>
+</html>
