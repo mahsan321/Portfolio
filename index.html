@@ -142,6 +142,40 @@
     max-width: var(--maxw);
     margin: 0 auto;
     padding: clamp(72px, 12vw, 130px) 24px clamp(96px, 14vw, 150px);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: clamp(32px, 6vw, 72px);
+  }
+  .hero-text { min-width: 0; }
+  .portrait {
+    position: relative;
+    width: clamp(190px, 22vw, 250px);
+    aspect-ratio: 4 / 5;
+    flex-shrink: 0;
+  }
+  .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    display: block;
+    filter: grayscale(0.15) contrast(1.02);
+  }
+  /* amber frame offset, echoing the trace */
+  .portrait::before {
+    content: "";
+    position: absolute;
+    inset: 12px -12px -12px 12px;
+    border: 1px solid var(--signal);
+    border-radius: 3px;
+    z-index: -1;
+  }
+  @media (max-width: 720px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .portrait { order: -1; width: 150px; }
   }
   .eyebrow {
     font-family: "IBM Plex Mono", monospace;
@@ -378,13 +412,13 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a class="mark" href="#top">M<span class="dot">.</span>Ahsan</a>
+    <a class="mark" href="#top">Muhammad<span class="dot">.</span>Ahsan</a>
     <div class="nav-links">
-      <a href="#research">research</a>
-      <a href="#publications">publications</a>
-      <a href="#experience">experience</a>
-      <a href="#awards">awards</a>
-      <a href="#contact">contact</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -394,6 +428,7 @@
     <path class="draw" d="M 0 170 L 60 170 L 80 90 L 100 165 L 140 165 L 160 60 L 180 150 L 210 150 L 230 110 L 250 168 L 320 168 L 340 75 L 360 160 L 400 160 L 420 120 L 445 120 L 465 70 L 490 165 L 560 165 L 585 100 L 610 165 L 660 165 L 685 55 L 710 150 L 760 150 L 785 130 L 810 130 L 835 80 L 860 168 L 930 168 L 955 95 L 980 160 L 1030 160 L 1055 65 L 1080 155 L 1130 155 L 1155 115 L 1200 115" />
   </svg>
   <div class="hero-inner">
+    <div class="hero-text">
     <p class="eyebrow">CPS Security · Side-Channel Analysis · ML for Security</p>
     <h1>Muhammad Ahsan</h1>
     <p class="lede">I read the <b>signals machines leak</b> to find out when they have been attacked.</p>
@@ -402,15 +437,21 @@
       PhD expected Jul 2026 · on the academic job market
     </div>
     <div class="cta-row">
-      <!-- TODO: replace href with your hosted CV path, e.g. assets/CV-Muhammad_Ahsan.pdf --> 
-      <a class="btn primary" href="https://raw.githubusercontent.com/mahsan321/Portfolio/master/pdf/CV-Muhammad_Ahsan.pdf">Download CV (PDF)</a>
+      <!-- TODO: replace href with your hosted CV path, e.g. assets/CV-Muhammad_Ahsan.pdf -->
+      <a class="btn primary" href="#">Download CV (PDF)</a>
       <a class="btn" href="mailto:ahsanm5@vcu.edu">Email</a>
       <!-- TODO: add your real Google Scholar and GitHub URLs -->
-      <a class="btn" href="https://scholar.google.com/citations?user=blP2CFQAAAAJ&hl=en">Google Scholar</a>
+      <a class="btn" href="#">Google Scholar</a>
       <a class="btn" href="https://github.com/mahsan321">GitHub</a>
     </div>
+    </div>
+    <figure class="portrait">
+      <!-- TODO: add your photo to the repo as assets/profile.jpg (a 4:5 portrait works best) -->
+      <img src="pic.jpg" alt="Portrait of Muhammad Ahsan" loading="eager" />
+    </figure>
   </div>
 </header>
+
 
 <main id="main">
 
