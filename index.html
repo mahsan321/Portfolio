@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Muhammad Ahsan — Cyber-Physical Systems Security</title>
 <meta name="description" content="Muhammad Ahsan, PhD candidate in Computer Science at VCU. Research on cyber-physical systems security, side-channel analysis, and machine learning for security." />
-
+ 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
+ 
 <style>
   :root {
     --bg: #f1f3f4;
@@ -25,11 +25,11 @@
     --maxw: 980px;
     --gap: clamp(64px, 9vw, 120px);
   }
-
+ 
   * { box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     margin: 0;
     background: var(--bg);
@@ -39,9 +39,9 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   a { color: inherit; }
-
+ 
   .skip {
     position: absolute;
     left: -9999px;
@@ -52,13 +52,13 @@
     z-index: 100;
   }
   .skip:focus { left: 8px; top: 8px; }
-
+ 
   .wrap {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 24px;
   }
-
+ 
   /* ---------- nav ---------- */
   .nav {
     position: sticky;
@@ -102,7 +102,7 @@
   .nav-links a:hover,
   .nav-links a:focus-visible { color: var(--ink); border-color: var(--signal); }
   @media (max-width: 680px) { .nav-links { display: none; } }
-
+ 
   /* ---------- hero ---------- */
   .hero {
     position: relative;
@@ -135,7 +135,7 @@
     animation: draw 2.4s ease-out 0.2s forwards;
   }
   @keyframes draw { to { stroke-dashoffset: 0; } }
-
+ 
   .hero-inner {
     position: relative;
     z-index: 2;
@@ -198,7 +198,7 @@
     margin: 0 0 28px;
   }
   .lede b { color: var(--ink); font-weight: 600; }
-
+ 
   .status {
     display: inline-flex;
     align-items: center;
@@ -219,7 +219,7 @@
     background: var(--signal);
     box-shadow: 0 0 0 3px var(--signal-wash);
   }
-
+ 
   .cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
   .btn {
     font-family: "IBM Plex Mono", monospace;
@@ -233,7 +233,7 @@
   .btn:hover, .btn:focus-visible { background: var(--ink); color: var(--bg); }
   .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
   .btn.primary:hover, .btn.primary:focus-visible { background: var(--signal); border-color: var(--signal); color: #fff; }
-
+ 
   /* ---------- sections ---------- */
   section { padding: var(--gap) 0; border-bottom: 1px solid var(--line); }
   .sec-label {
@@ -255,7 +255,7 @@
   p { margin: 0 0 16px; }
   .prose { max-width: 64ch; color: var(--ink-soft); }
   .prose b { color: var(--ink); }
-
+ 
   /* interests */
   .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
   .tag {
@@ -267,7 +267,7 @@
     border-radius: 2px;
     padding: 7px 12px;
   }
-
+ 
   /* publications */
   .pub-group-label {
     font-family: "IBM Plex Mono", monospace;
@@ -322,7 +322,7 @@
   }
   .badge.hot { color: var(--signal-deep); border-color: rgba(207,92,8,0.4); background: var(--signal-wash); }
   .badge.live { color: var(--ink); border-style: dashed; }
-
+ 
   /* experience / timeline rows */
   .row {
     display: grid;
@@ -343,7 +343,7 @@
   @media (max-width: 680px) {
     .row { grid-template-columns: 1fr; gap: 8px; }
   }
-
+ 
   /* awards */
   .award-list { list-style: none; margin: 0; padding: 0; }
   .award-list li {
@@ -363,7 +363,7 @@
   }
   .feature p { margin: 0; color: var(--ink-soft); }
   .feature b { color: var(--ink); }
-
+ 
   /* contact */
   .contact-grid {
     display: grid;
@@ -389,7 +389,7 @@
   }
   .contact-grid .v { font-weight: 600; word-break: break-word; }
   .contact-grid a:hover .v, .contact-grid a:focus-visible .v { color: var(--signal-deep); }
-
+ 
   footer {
     padding: 40px 0 64px;
     font-family: "IBM Plex Mono", monospace;
@@ -397,9 +397,9 @@
     color: var(--ink-faint);
   }
   footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-
+ 
   :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
-
+ 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .trace .draw { animation: none; stroke-dashoffset: 0; }
